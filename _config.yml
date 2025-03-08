@@ -13,7 +13,7 @@ title                    : "Kalliopi Christina Despotidou"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : "https://kallistina.github.io"
+url                      : "https://kallistina.github.io/"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://kallistina.github.io/"
 
