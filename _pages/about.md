@@ -29,7 +29,7 @@ For a full list of my projects, check out my **[GitHub](https://github.com/Kalli
 - **Languages Spoken:** Greek (Native), English (Proficient), French (Proficient), Spanish (Intermediate)
 
 ## Let’s Connect! 📩
-I’m always open to **collaborations, discussions, and exciting opportunities**. Feel free to reach out via **[LinkedIn](https://www.linkedin.com/in/kalliopi-despotidou/)** or **[Email](mailto:kdespotidou@di.uoa.gr)**.
+Feel free to reach out via **[LinkedIn](https://www.linkedin.com/in/kalliopi-despotidou/)** or **[Email](mailto:kdespotidou@di.uoa.gr)**.
 
 Thanks for visiting my space! 🚀
 
