@@ -9,7 +9,7 @@ redirect_from:
 
 ## About Me
 
-Hi, I'm **Kalliopi Christina Despotidou**, a **Network Engineer, Researcher, and Developer** with a passion for **wireless networks, cybersecurity, and artificial intelligence**. I love turning complex challenges into elegant solutions, blending technology with innovation to push boundaries. 
+Hello! I'm **Kalliopi Christina Despotidou**, a **Network Engineer, Researcher, and Developer** with a passion for **wireless networks, cybersecurity, and artificial intelligence**. I love turning complex challenges into elegant solutions, blending technology with innovation to push boundaries. 
 
 ## My Journey 📜
 With a **BSc in Informatics and Telecommunications** and an ongoing **MSc in Network Engineering**, I've worked on groundbreaking projects in **wireless communications, AI-driven networking, and secure systems**. From research labs to real-world applications, my work is fueled by curiosity and a drive for excellence.
