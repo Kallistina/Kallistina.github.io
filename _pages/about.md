@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Welcome to My World! 🌍
-
 ## About Me
 
 Hi, I'm **Kalliopi Christina Despotidou**, a **Network Engineer, Researcher, and Developer** with a passion for **wireless networks, cybersecurity, and artificial intelligence**. I love turning complex challenges into elegant solutions, blending technology with innovation to push boundaries. 
