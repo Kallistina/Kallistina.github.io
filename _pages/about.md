@@ -21,11 +21,5 @@ I have a background in [your education, work experience, or research]. Over the 
 ## Projects & Work  
 I’ve worked on [describe one or two notable projects]. You can check out my work [link to portfolio, GitHub, or any other relevant website].  
 
-## Contact  
-Feel free to reach out to me via:  
-📧 Email: [your.email@example.com]  
-💼 LinkedIn: [LinkedIn Profile Link]  
-📂 GitHub: [GitHub Profile Link]  
-
 Thanks for visiting! 😊
 
