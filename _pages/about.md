@@ -1,14 +1,11 @@
 ---
 permalink: /
-title: 
+title: "Welcome to My Website 👋"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-
-# Welcome to My Website 👋
 
 ## About Me  
 Hello! I'm **[Your Name]**, a [Your Profession or Field] passionate about [mention your key interests]. I specialize in [your skills or expertise] and love working on projects related to [topics you enjoy].
