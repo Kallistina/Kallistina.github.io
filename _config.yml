@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Kalliopi Christina Despotidou"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Kallistina"
 description              : &description "personal description"
 url                      : "https://kallistina.github.io/"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -59,7 +59,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : https://www.linkedin.com/in/kalliopi-despotidou/
+  linkedin         : "https://www.linkedin.com/in/kalliopi-despotidou/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
