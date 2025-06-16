@@ -9,12 +9,14 @@ redirect_from:
 
 ## About Me
 
-Hello! I'm **Kalliopi Christina Despotidou**. Ι pursued a BSc in Informatics and Telecommunications at the National and Kapodistrian University of Athens, where I developed a strong foundation in software engineering, AI, and wireless communications. Currently, I am on a MSc program to specialize further in network engineering, with a focus on areas such as Wireless Networks and Network Security.
+Hi there! I’m **Kalliopi Christina Despotidou** — I hold a BSc in Informatics and Telecommunications from the National and Kapodistrian University of Athens, where I built a solid background in software engineering, AI and wireless communications. 
 
+Right now, I'm diving deeper into network engineering through my MSc, focusing on wireless networks and network security — two fields I'm really passionate about.
 
-## Let’s Connect! 📩
-Feel free to reach out via **[LinkedIn](https://www.linkedin.com/in/kalliopi-despotidou/)** or **[Email](mailto:kdespotidou@di.uoa.gr)**.
+## Let’s Connect! 
 
-Thanks for visiting my space! 🚀
+I’d love to hear from you! Feel free to connect with me on **[LinkedIn](https://www.linkedin.com/in/kalliopi-despotidou/)** or drop me an **[email](mailto:kdespotidou@di.uoa.gr)**.
+
+Thanks for stopping by! 
 
 
