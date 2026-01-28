@@ -1,31 +1,25 @@
-kallistina
+Kalliopi Despotidou
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Kalliopi Despotidou
+Kalliopi Despotidou
+MSc Student
 
 Show Contacts
 
 Email
-richard@example.com
-
-Phone
-+1 (213) 352-2795
-
-Birthday
-June 23, 1982
+kdespotidou@di.uoa.gr
 
 Location
-Sacramento, California, USA
+Athens, Greece
 
 # navbar
 
 About
 Resume
 Portfolio
-Blog
+Publications
 Contact
 
 # about
