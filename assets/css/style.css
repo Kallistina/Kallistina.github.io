@@ -1564,9 +1564,23 @@ textarea.form-input::-webkit-resizer {
     margin: 32px 0;
   }
 
-  .contacts-list {
+  /* .contacts-list {
     gap: 20px;
-  }
+  } */
+
+
+.contacts-list {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 25px;              /* space between items */
+  font-size: 14px;         /* smaller or larger depending on preference */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* space between icon and text */
+}
 
   .contact-info {
     max-width: calc(100% - 64px);
