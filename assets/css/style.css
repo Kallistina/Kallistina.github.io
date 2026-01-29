@@ -547,22 +547,8 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
-.about .article-title {
-  margin-bottom: 15px;
-}
-
-.about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
-.about-text p {
-  margin-bottom: 15px;
-}
-
 .about-text a {
+  display: inline-block; /* inline-block keeps it in line but allows positioning */
   position: relative;
   color: #7c3aed;
   font-weight: 500;
@@ -573,18 +559,25 @@ main {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  background-color: #7c3aed;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
   transition: transform 0.25s ease;
 }
 
 .about-text a:hover::after {
   transform: scaleX(1);
+  transform-origin: left;
 }
+
+.about-text a:hover {
+  color: #6d28d9;
+}
+
+
 
 
 
