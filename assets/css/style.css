@@ -547,7 +547,7 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
-.about .article-title {
+/* .about .article-title {
   margin-bottom: 15px;
 }
 
@@ -560,8 +560,39 @@ main {
 
 .about-text p {
   margin-bottom: 15px;
+} */
+
+
+/**
+ * #ABOUT
+\*-----------------------------------*/
+
+.about .article-title {
+  margin-bottom: 15px;
 }
 
+.about-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300); /* Add this line - it was missing */
+  line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* Add these styles to ensure links are visible */
+.about-text a {
+  color: var(--orange-yellow-crayola); /* Make links stand out */
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.about-text a:hover {
+  color: var(--vegas-gold);
+  text-decoration: underline;
+}
 
 
 /**
