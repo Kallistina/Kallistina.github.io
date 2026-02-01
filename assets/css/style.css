@@ -586,7 +586,13 @@ main {
   line-height: 1.6;
 }
 
-
+.publications-text {
+  color: var(--white-2);
+  /* this is full white in your variables */
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
 
 
 
