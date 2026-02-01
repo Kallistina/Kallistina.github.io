@@ -548,7 +548,8 @@ main {
 \*-----------------------------------*/
 
 .about-text a {
-  display: inline-block; /* inline-block keeps it in line but allows positioning */
+  display: inline-block;
+  /* inline-block keeps it in line but allows positioning */
   position: relative;
   color: #7c3aed;
   font-weight: 500;
@@ -578,7 +579,8 @@ main {
 }
 
 .about-text {
-  color: var(--white-2); /* this is full white in your variables */
+  color: var(--white-2);
+  /* this is full white in your variables */
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -855,7 +857,7 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.clients-item {
+/* .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
@@ -864,12 +866,45 @@ main {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
+} */
+
+/* Normalize logo size */
+.clients-item {
+  min-width: 160px;
+  /* same width */
+  height: 90px;
+  /* same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 
-.clients-item img:hover {
+/* Make logos fit nicely */
+.clients-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: var(--transition-1);
+}
+
+
+/* .clients-item img:hover {
+  filter: grayscale(0);
+} */
+
+.clients-item {
+  transition: transform 0.2s ease;
+}
+
+.clients-item:hover {
+  transform: scale(1.05);
+}
+
+.clients-item:hover img {
   filter: grayscale(0);
 }
-
 
 
 
@@ -1569,18 +1604,22 @@ textarea.form-input::-webkit-resizer {
   } */
 
 
-.contacts-list {
-  display: flex;
-  flex-direction: column; /* stack vertically */
-  gap: 25px;              /* space between items */
-  font-size: 14px;         /* smaller or larger depending on preference */
-}
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    gap: 25px;
+    /* space between items */
+    font-size: 14px;
+    /* smaller or larger depending on preference */
+  }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;              /* space between icon and text */
-}
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between icon and text */
+  }
 
   .contact-info {
     max-width: calc(100% - 64px);
