@@ -1,12 +1,33 @@
-# Visit my portfolio at [dub.sh/ankitdey](https://dub.sh/ankitdey)
+# Personal Portfolio Website
+under construction...
 
-This is my personal website made purely in javascript using React and Tailwind CSS.
+<!-- This is my personal portfolio website, built to showcase my academic background, technical skills, and projects in **Network Engineering, Research, and Software Development**.
 
-## Socials
+The website is fully responsive and designed as a single-page application with smooth navigation between sections.
 
-- __Ankit Dey(Me)__
-  
-    - Portfolio : https://dub.sh/ankitdey/
-    - Twitter : https://twitter.com/marshdit/
-    - Github : https://github.com/ankitdey-marsh/
-    - Mastodon: https://mastodon.social/@ankit_dey
+## Features
+- About section with academic and professional background  
+- Resume with education, experience, and skills  
+- Portfolio section with project filtering  
+- Publications section  
+- Contact form with validation  
+- Responsive sidebar navigation  
+- Clean, modern UI  
+
+## Built With
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
+
+## Project Structure
+- `index.html` – main layout and content  
+- `assets/css/` – stylesheets  
+- `assets/js/script.js` – interactivity and navigation logic  
+- `assets/images/` – icons, logos, and images  
+
+## How to Run
+Open `index.html` directly in your browser  
+or use a live server extension for a better development experience.
+
+## Notes
+This website is intended for personal and academic presentation purposes and is continuously evolving as my skills and experience grow. -->
