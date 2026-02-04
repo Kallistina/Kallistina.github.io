@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kallistina.github.io",
+  "homepage": "https://kallistina.github.io/",
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",
     "@emailjs/browser": "^4.3.3",

@@ -1,0 +1,19 @@
+[Edit Code]
+     |
+     v
+[npm start]   <-- Local dev server (http://localhost:3000)
+     |
+     v
+[Test in browser]  <-- Check functionality, fix errors/warnings
+     |
+     v
+[npm run build]   <-- Create production-ready files in /build
+     |
+     v
+[npx serve -s build]  <-- Optional: preview production locally
+     |
+     v
+[npm run deploy]   <-- Push /build to gh-pages branch → updates GitHub Pages
+     |
+     v
+[GitHub Pages Live] <-- Your live site is updated
