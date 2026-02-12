@@ -3,9 +3,10 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Content from "./components/content";
-import About from "./components/about";
-import Skills from "./components/skills";
+import Projects from "./components/projects";
+import Publications from "./components/publications";
 import Contact from "./components/contact";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <div className="pt-12"> {/* optional padding so navbar doesn't overlap content */}
           <Routes>
             <Route path="/" element={<Content />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
