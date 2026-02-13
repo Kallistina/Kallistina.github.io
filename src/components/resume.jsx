@@ -1,62 +1,123 @@
 import React from "react";
 
 const Resume = () => {
+  const education = [
+    {
+      title: "National and Kapodistrian University of Athens",
+      period: "2024 — Present",
+      description: "Master of Science in Network Engineering",
+    },
+    {
+      title: "National and Kapodistrian University of Athens",
+      period: "2020 — 2024",
+      description: "Bachelor of Science in Computer Science",
+    },
+    {
+      title: "Model High School",
+      period: "2014 — 2020",
+      description: "High School Diploma",
+    },
+  ];
+
+  const experience = [
+    {
+      title: "Athena Research Center",
+      period: "Nov 2025 — Present",
+      description: "Software Engineer & Researcher",
+    },
+    {
+      title: "Huawei Technologies",
+      period: "Apr 2025 — Oct 2025",
+      description: "Network Engineer",
+    },
+    {
+      title: "National and Kapodistrian University of Athens",
+      period: "Dec 2023 — Feb 2025",
+      description: "Research and Lab Assistant",
+    },
+  ];
+
+  const skillGroups = [
+    {
+      title: "AI & Research",
+      items: ["Machine Learning", "Research", "Data Analysis", "Experiment Design"],
+    },
+    {
+      title: "Networks & Security",
+      items: ["Network Engineering", "Telecommunications Networks", "Systems Security", "Troubleshooting"],
+    },
+    {
+      title: "Software Development",
+      items: ["Python", "JavaScript", "React", "Node.js"],
+    },
+    {
+      title: "DevOps & Tools",
+      items: ["Docker", "Kubernetes", "Linux", "Git/GitHub", "MySQL"],
+    },
+  ];
+
   return (
-    <div className="md:p-22 md:pt-24 md:pb-22 md:px-40 md:h-full select-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:mt-0 mt-6 pt-16">
-      <div className="md:flex md:justify-between md:gap-10">
-        <div className="md:w-6/12">
-          <h1 className="md:text-5xl text-4xl font-semibold font-rubix">
-            Professional <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Resume</span>
-          </h1>
-          <hr className="md:w-44 w-32 md:mb-0 mb-4 h-3 mt-3 md:ml-0 lg:mt-4 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
-          <p className="font-poppins text-justify md:mt-8 mt-6 text-[rgb(15,23,42)]">
-            This section highlights education, experience, and technical capabilities. You can replace the example entries below with your latest information and add a PDF file at{" "}
-            <span className="font-semibold">/public/resume.pdf</span> to enable your download button.
-          </p>
-          <div className="flex gap-3 mt-6">
-            <a
-              className="border border-black rounded-full px-5 py-2 font-poppins text-sm font-medium hover:bg-[#c580f023] transition-all duration-300"
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Resume PDF
-            </a>
-            <a
-              className="border border-black rounded-full px-5 py-2 font-poppins text-sm font-medium hover:bg-[#c580f023] transition-all duration-300"
-              href="/resume.pdf"
-              download
-            >
-              Download
-            </a>
-          </div>
-        </div>
+    <div className="md:px-24 md:pt-24 md:pb-12 min-h-[calc(100vh-3rem)] select-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-7 md:mt-0 mt-6 pt-16">
+      <h1 className="md:text-4xl text-3xl font-semibold font-rubix">
+        My <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Resume</span>
+      </h1>
+      <hr className="md:w-44 w-32 h-3 mt-3 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
 
-        <div className="md:w-6/12 md:mt-0 mt-8">
-          <div className="border rounded-xl p-5 bg-white/70">
-            <h2 className="font-rubix text-2xl font-medium">Experience</h2>
-            <div className="mt-4 font-poppins">
-              <p className="font-semibold">Researcher and Software Engineer</p>
-              <p className="text-sm text-slate-600">Athena Research Center | 2024 - Present</p>
-              <p className="mt-1 text-sm">Contributing to engineering and research projects in networking and machine learning.</p>
-            </div>
-          </div>
+      <div className="mt-6 grid md:grid-cols-2 gap-4">
+        <section className="rounded-xl bg-white/75 border border-slate-200/70 p-4 md:p-5">
+          <h2 className="font-rubix text-xl md:text-2xl font-medium">Education</h2>
+          <ol className="mt-4 pl-4 border-l-2 border-[#c580f088] space-y-4">
+            {education.map((item) => (
+              <li
+                key={`${item.title}-${item.period}`}
+                className="relative rounded-lg p-2.5 transition-all duration-300 hover:bg-[#f6efff] hover:shadow-sm hover:-translate-y-0.5"
+              >
+                <span className="absolute -left-[18px] top-1.5 h-3 w-3 rounded-full bg-[#7a2fd1] border-2 border-white shadow" />
+                <h4 className="font-poppins text-sm md:text-base font-semibold text-slate-900 leading-snug">{item.title}</h4>
+                <span className="font-poppins text-xs md:text-sm text-slate-500">{item.period}</span>
+                <p className="font-poppins text-xs md:text-sm text-slate-700 mt-1">{item.description}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
 
-          <div className="border rounded-xl p-5 bg-white/70 mt-4">
-            <h2 className="font-rubix text-2xl font-medium">Education</h2>
-            <div className="mt-4 font-poppins">
-              <p className="font-semibold">MSc in Network Engineering and Machine Learning</p>
-              <p className="text-sm text-slate-600">University of Athens | Ongoing</p>
-            </div>
-          </div>
+        <section className="rounded-xl bg-white/75 border border-slate-200/70 p-4 md:p-5">
+          <h2 className="font-rubix text-xl md:text-2xl font-medium">Experience</h2>
+          <ol className="mt-4 pl-4 border-l-2 border-[#c580f088] space-y-4">
+            {experience.map((item) => (
+              <li
+                key={`${item.title}-${item.period}`}
+                className="relative rounded-lg p-2.5 transition-all duration-300 hover:bg-[#f6efff] hover:shadow-sm hover:-translate-y-0.5"
+              >
+                <span className="absolute -left-[18px] top-1.5 h-3 w-3 rounded-full bg-[#7a2fd1] border-2 border-white shadow" />
+                <h4 className="font-poppins text-sm md:text-base font-semibold text-slate-900 leading-snug">{item.title}</h4>
+                <span className="font-poppins text-xs md:text-sm text-slate-500">{item.period}</span>
+                <p className="font-poppins text-xs md:text-sm text-slate-700 mt-1">{item.description}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
 
-          <div className="border rounded-xl p-5 bg-white/70 mt-4">
-            <h2 className="font-rubix text-2xl font-medium">Core Skills</h2>
-            <p className="mt-3 font-poppins text-sm">
-              React, JavaScript, Python, Node.js, Docker, Kubernetes, Selenium, Linux, MySQL, MongoDB.
-            </p>
-          </div>
-        </div>
+        <section className="md:col-span-2 rounded-xl bg-white/75 border border-slate-200/70 p-4 md:p-5">
+          <h2 className="font-rubix text-xl md:text-2xl font-medium">My Skills</h2>
+          <ul className="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {skillGroups.map((group) => (
+              <li
+                key={group.title}
+                className="group rounded-lg border border-slate-200/80 p-3 bg-white/80 transition-all duration-300 hover:bg-[#f6efff] hover:border-[#c39bf0] hover:-translate-y-0.5 hover:shadow-sm"
+              >
+                <h5 className="font-rubix text-sm md:text-base text-[#6b21a8]">{group.title}</h5>
+                <ul className="mt-2 space-y-1.5">
+                  {group.items.map((item) => (
+                    <li key={item} className="font-poppins text-xs text-slate-700 leading-snug">
+                      - {item}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </div>
   );
