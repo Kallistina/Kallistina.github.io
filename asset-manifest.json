@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b999654.css",
-    "main.js": "/static/js/main.90473545.js",
+    "main.css": "/static/css/main.1dbc2095.css",
+    "main.js": "/static/js/main.99a1f179.js",
     "static/js/531.1951cf37.chunk.js": "/static/js/531.1951cf37.chunk.js",
     "static/js/337.11ab334c.chunk.js": "/static/js/337.11ab334c.chunk.js",
     "static/js/12.1a3bedee.chunk.js": "/static/js/12.1a3bedee.chunk.js",
@@ -14,18 +14,12 @@
     "static/media/skills.lottie": "/static/media/skills.3ab85a55611b7530c2fc.lottie",
     "static/media/Karla-Regular-S52ZIU5L.woff": "/static/media/Karla-Regular-S52ZIU5L.3ac28a6ac03a9f7f3d82.woff",
     "static/media/ani.lottie": "/static/media/ani.f9f2340551e2e4237754.lottie",
-    "static/media/kubernetes.svg": "/static/media/kubernetes.9c2b252df012670856cc2db6e7364d84.svg",
-    "static/media/bash.svg": "/static/media/bash.31469aae70b8e95103fe760027703efa.svg",
-    "static/media/selenium.svg": "/static/media/selenium.47a7b9096918004b37083fef7b026491.svg",
-    "static/media/docker.svg": "/static/media/docker.d33285e5e47ca12603a0228b49aff3c2.svg",
-    "static/media/tailwind.svg": "/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
-    "static/media/mongodb.svg": "/static/media/mongodb.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
     "index.html": "/index.html",
-    "main.9b999654.css.map": "/static/css/main.9b999654.css.map",
-    "main.90473545.js.map": "/static/js/main.90473545.js.map"
+    "main.1dbc2095.css.map": "/static/css/main.1dbc2095.css.map",
+    "main.99a1f179.js.map": "/static/js/main.99a1f179.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b999654.css",
-    "static/js/main.90473545.js"
+    "static/css/main.1dbc2095.css",
+    "static/js/main.99a1f179.js"
   ]
 }
