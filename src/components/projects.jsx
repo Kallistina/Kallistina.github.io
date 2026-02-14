@@ -3,40 +3,36 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      title: "Network Monitoring Dashboard",
+      title: "Quantum Kernel SVM",
       description:
-        "Real-time monitoring dashboard for network traffic analytics with alerting, filtering, and performance trends.",
-      image: "/logo.png",
-      tags: ["React", "Node.js", "WebSockets"],
-      demo: "#",
-      github: "#",
+        "Quantum machine learning project focused on kernel-based classification with SVM concepts and quantum-inspired feature mapping.",
+      image: "https://opengraph.githubassets.com/1/Kallistina/quantum_kernel_svm",
+      tags: ["Quantum ML", "SVM", "Python"],
+      github: "https://github.com/Kallistina/quantum_kernel_svm",
     },
     {
-      title: "ML Research Assistant",
+      title: "Distributed SQL Query Engine",
       description:
-        "A tool to organize experiments, compare metrics, and track model results for machine learning research workflows.",
-      image: "/logo.png",
-      tags: ["Python", "ML", "Data Analysis"],
-      demo: "#",
-      github: "#",
+        "Implementation of a distributed SQL query processing approach for scalable analytics workloads across multiple data partitions.",
+      image: "https://opengraph.githubassets.com/1/Kallistina/distributed-SQL-query-engine",
+      tags: ["Distributed Systems", "SQL", "Query Processing"],
+      github: "https://github.com/Kallistina/distributed-SQL-query-engine",
     },
     {
-      title: "Cloud Deployment Pipeline",
+      title: "LMS Adaptive Filtering",
       description:
-        "Automated CI/CD setup for containerized services with validation steps and deployment preview environments.",
-      image: "/logo.png",
-      tags: ["Docker", "Kubernetes", "CI/CD"],
-      demo: "#",
-      github: "#",
+        "MATLAB projects analyzing Least Mean Squares adaptive filters, coefficient convergence, and MSE behavior across configurations.",
+      image: "https://opengraph.githubassets.com/1/Kallistina/lms-adaptive-filtering",
+      tags: ["MATLAB", "Signal Processing", "LMS"],
+      github: "https://github.com/Kallistina/lms-adaptive-filtering",
     },
     {
-      title: "Secure Systems Toolkit",
+      title: "Linux Terminal Simulator",
       description:
-        "Security-focused scripts and utilities for system checks, policy verification, and operational hardening.",
-      image: "/logo.png",
-      tags: ["Linux", "Security", "Automation"],
-      demo: "#",
-      github: "#",
+        "Terminal simulation project for Linux-style command-line behavior, focusing on shell interaction and core command execution flow.",
+      image: "https://opengraph.githubassets.com/1/Kallistina/linux-terminal-simulator",
+      tags: ["Linux", "Terminal", "Systems"],
+      github: "https://github.com/Kallistina/linux-terminal-simulator",
     },
   ];
 
@@ -46,6 +42,18 @@ const Projects = () => {
         My <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Projects</span>
       </h1>
       <hr className="md:w-44 w-32 md:mb-0 mb-4 h-3 mt-3 md:ml-0 lg:mt-4 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+      <p className="font-poppins text-sm text-slate-600 mt-3">
+        More projects on{" "}
+        <a
+          href="https://github.com/Kallistina"
+          target="_blank"
+          rel="noreferrer"
+          className="text-[#6b21a8] font-medium hover:underline"
+        >
+          my GitHub profile
+        </a>
+        .
+      </p>
 
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         {projects.map((project) => (
@@ -79,13 +87,9 @@ const Projects = () => {
 
               <div className="flex gap-2 mt-2.5">
                 <a
-                  href={project.demo}
-                  className="text-[11px] font-poppins font-medium rounded-full px-2.5 py-1 border border-black/20 hover:bg-[#f4ebff] transition-all duration-300"
-                >
-                  Live Demo
-                </a>
-                <a
                   href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-[11px] font-poppins font-medium rounded-full px-2.5 py-1 border border-black/20 hover:bg-[#f4ebff] transition-all duration-300"
                 >
                   GitHub
