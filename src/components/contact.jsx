@@ -66,14 +66,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="md:w-6/12">
-          <h2 className="font-rubix text-xl font-medium mt-2 mb-2">
-            Athens <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Map</span>
-          </h2>
+        <div className="md:w-7/12">
           <iframe
             title="Athens map"
             src="https://www.google.com/maps?q=Athens,+Greece&hl=en&t=m&z=11&output=embed"
-            className="w-full h-52 md:h-64 border-0 rounded-lg grayscale opacity-80"
+            className="w-full h-64 md:h-[420px] border-0 rounded-lg grayscale opacity-60"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
