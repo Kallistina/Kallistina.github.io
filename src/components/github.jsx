@@ -5,7 +5,7 @@ const github = () => {
   return (
     <div className="z-10 fixed bottom-14 md:bottom-20 -left-1 flex flex-col gap-2">
       <a
-        className="w-36 border border-black h-12 rounded-r-full flex items-center gap-2 pl-2 hover:bg-[#3d373d] hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300"
+        className="w-36 border border-black/80 dark:border-slate-300/60 h-12 rounded-r-full flex items-center gap-2 pl-2 bg-white/70 dark:bg-slate-800/80 hover:bg-[#3d373d] dark:hover:bg-slate-700 hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300 dark:active:bg-slate-600"
         href="mailto:kdespotidou@di.uoa.gr"
       >
         <div>
@@ -15,7 +15,7 @@ const github = () => {
       </a>
 
       <a
-        className="w-36 border border-black h-12 rounded-r-full flex items-center gap-2 pl-2 hover:bg-[#3d373d] hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300"
+        className="w-36 border border-black/80 dark:border-slate-300/60 h-12 rounded-r-full flex items-center gap-2 pl-2 bg-white/70 dark:bg-slate-800/80 hover:bg-[#3d373d] dark:hover:bg-slate-700 hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300 dark:active:bg-slate-600"
         href="https://www.linkedin.com/in/kalliopi-despotidou/"
         target="_blank"
         rel="noreferrer"
@@ -27,7 +27,7 @@ const github = () => {
       </a>
 
       <a
-        className="w-36 border border-black h-12 rounded-r-full flex items-center gap-2 pl-2 hover:bg-[#3d373d] hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300"
+        className="w-36 border border-black/80 dark:border-slate-300/60 h-12 rounded-r-full flex items-center gap-2 pl-2 bg-white/70 dark:bg-slate-800/80 hover:bg-[#3d373d] dark:hover:bg-slate-700 hover:text-[#ffffff] transition-all duration-200 active:bg-zinc-300 dark:active:bg-slate-600"
         href="https://github.com/Kallistina"
         target="_blank"
         rel="noreferrer"
