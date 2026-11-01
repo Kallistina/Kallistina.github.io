@@ -1,12 +1,49 @@
 import React, { useEffect, useState } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/navbar";
-import Content from "./components/content";
-import Projects from "./components/projects";
+import Sidebar from "./components/sidebar";
+import Hero from "./components/hero";
+import About from "./components/about";
+import Education from "./components/education";
+import Experience from "./components/experience";
 import Publications from "./components/publications";
+// import Projects from "./components/projects";
+import Skills from "./components/skills";
 import Contact from "./components/contact";
-import Resume from "./components/resume";
+
+const sections = [
+  { id: "about", label: "About" },
+  { id: "education", label: "Education" },
+  { id: "experience", label: "Experience" },
+  { id: "publications", label: "Publications" },
+  // { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "contact", label: "Contact" },
+];
+
+// Tracks which section is currently in the middle of the viewport.
+const useActiveSection = (ids) => {
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    ["top", ...ids].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [ids]);
+
+  return active;
+};
+
+const sectionIds = sections.map((s) => s.id);
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -24,7 +61,6 @@ function App() {
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDarkMode);
-    document.body.classList.toggle("dark", isDarkMode);
     try {
       window.localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     } catch {
@@ -36,21 +72,24 @@ function App() {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
+  const active = useActiveSection(sectionIds);
+
   return (
-    <HashRouter>
-      <div className="min-h-screen bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-100">
-        <Navbar isDarkMode={isDarkMode} onToggleTheme={toggleTheme} />
-        <div className="pt-12"> {/* optional padding so navbar doesn't overlap content */}
-          <Routes>
-            <Route path="/" element={<Content />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/publications" element={<Publications />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+    <div className="min-h-screen">
+      <Sidebar sections={sections} active={active} isDarkMode={isDarkMode} onToggleTheme={toggleTheme} />
+      <main className="px-5 sm:px-8 lg:ml-64 lg:px-16 xl:px-24">
+        <div className="mx-auto max-w-4xl">
+          <Hero />
+          <About />
+          <Education />
+          <Experience />
+          <Publications />
+          {/* <Projects /> */}
+          <Skills />
+          <Contact />
         </div>
-      </div>
-    </HashRouter>
+      </main>
+    </div>
   );
 }
 

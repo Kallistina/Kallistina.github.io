@@ -1,27 +1,73 @@
 import React from "react";
-import { DotLottiePlayer } from "@dotlottie/react-player";
-import "@dotlottie/react-player/dist/index.css";
-import Animation from "./lottiefiles/skills.lottie";
+import Section from "./section";
+import { profile, publications } from "../data";
 
-const Publications = () => {
-  return (
-    <div className="md:p-22 md:pt-24 md:pb-22 md:px-40 md:h-full select-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px] bg-[white] dark:bg-slate-900 p-8 md:mt-0 mt-6 pt-16 transition-colors duration-300">
-      <h1 className="md:text-5xl text-4xl font-semibold font-rubix text-slate-900 dark:text-slate-100">
-        My <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Publications</span>
-      </h1>
-      <hr className="md:w-44 w-32 md:mb-0 mb-4 h-3 mt-3 md:ml-0 lg:mt-4 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+const surname = profile.name.split(" ").pop();
 
-      <div className="mt-8 relative min-h-[320px]">
-        <div className="md:w-6/12 border border-slate-300/70 dark:border-slate-600 rounded-xl p-6 md:p-8 bg-white/70 dark:bg-slate-800/80">
-          <p className="font-poppins text-lg md:text-xl font-medium text-slate-800 dark:text-slate-100">No publications yet.</p>
-          <p className="font-poppins text-slate-600 dark:text-slate-300 mt-2">Coming soon.</p>
-        </div>
-        <div className="hidden lg:block absolute right-0 top-0 w-5/12">
-          <DotLottiePlayer src={Animation} autoplay loop style={{ height: 320 }} />
-        </div>
-      </div>
-    </div>
-  );
-};
+// Bold the author entry that contains my surname.
+const Authors = ({ authors }) => (
+  <>
+    {authors.split(", ").map((author, i, all) => (
+      <React.Fragment key={author}>
+        {author.includes(surname) ? <strong className="font-semibold text-ink">{author}</strong> : author}
+        {i < all.length - 1 && ", "}
+      </React.Fragment>
+    ))}
+  </>
+);
+
+const Publications = () => (
+  <Section id="publications" title="Publications">
+    {publications.length === 0 ? (
+      <p className="max-w-2xl text-muted">No publications yet.</p>
+    ) : (
+      <ol className="space-y-8">
+        {publications.map((pub) => (
+          <li key={pub.title} className="max-w-3xl">
+            <h3 className="font-serif text-lg font-semibold leading-snug text-ink">{pub.title}</h3>
+            <p className="mt-1 text-sm text-muted">
+              <Authors authors={pub.authors} />
+            </p>
+            <p className="mt-1 text-sm text-muted">
+              <em>{pub.venue}</em>
+              {pub.year && `, ${pub.year}`}
+              {pub.status && (
+                <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-medium not-italic text-accent">
+                  {pub.status}
+                </span>
+              )}
+            </p>
+            {pub.links && (
+              <div className="mt-2 flex gap-4 text-sm">
+                {Object.entries(pub.links)
+                  .filter(([, href]) => href)
+                  .map(([label, href]) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-medium uppercase tracking-wide text-accent underline-offset-4 hover:underline"
+                    >
+                      {label}
+                    </a>
+                  ))}
+              </div>
+            )}
+          </li>
+        ))}
+      </ol>
+    )}
+    {profile.links.scholar && (
+      <p className="mt-10 text-sm text-muted">
+        For a complete and up-to-date list, see my{" "}
+        <a href={profile.links.scholar} target="_blank" rel="noreferrer" className="text-accent underline-offset-4 hover:underline">
+          Google Scholar profile
+        </a>
+        .
+      </p>
+    )}
+  </Section>
+);
 
 export default Publications;
