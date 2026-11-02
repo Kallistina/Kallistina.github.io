@@ -1,31 +1,30 @@
 import React from "react";
 import { LuArrowDown, LuDownload } from "react-icons/lu";
 import SocialLinks from "./sociallinks";
+import HeroBackground from "./herobackground";
 import { profile } from "../data";
 
 const Hero = () => (
   <section id="top" className="relative flex min-h-[calc(100svh-3.5rem)] flex-col justify-center py-16 lg:min-h-screen">
+    <HeroBackground />
+
     {profile.photo && (
       <img
         src={profile.photo}
         alt={profile.name}
-        className="mb-8 h-28 w-28 rounded-full border border-line object-cover md:h-32 md:w-32"
+        className="relative mb-8 h-28 w-28 rounded-full border border-line object-cover md:h-32 md:w-32"
       />
     )}
 
-    {profile.eyebrow && (
-      <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">{profile.eyebrow}</p>
-    )}
-
-    <h1 className="mt-5 font-serif text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl md:text-7xl">
-      {profile.name}
+    <h1 className="relative font-serif text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl md:text-7xl">
+      {profile.greeting}
     </h1>
 
-    <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-      {profile.tagline}
-    </p>
+    <p className="relative mt-6 max-w-2xl text-balance font-serif text-2xl leading-snug text-ink/80 md:text-3xl">{profile.tagline}</p>
 
-    <div className="mt-10 flex flex-wrap items-center gap-3">
+    {profile.affiliation && <p className="relative mt-6 text-base text-muted">{profile.affiliation}</p>}
+
+    <div className="relative mt-10 flex flex-wrap items-center gap-3">
       {profile.cv && (
         <a
           href={profile.cv}

@@ -5,10 +5,10 @@ export const profile = {
   name: "Kalliopi Despotidou",
   shortName: "Kalliopi",
   role: "Privacy & ML Researcher",
-  // Small line shown above your name on the landing page.
-  eyebrow: "Privacy · Security · Machine Learning",
-  tagline:
-    "I work on privacy-preserving machine learning, federated learning and explainability.",
+  // Landing page: big greeting, one sentence about you, and where you are now.
+  greeting: "Hi, I’m Kalliopi!",
+  tagline: "I’m interested in how machines can learn from data they’re not allowed to see.",
+  affiliation: "Researcher at Athena Research Center, Athens",
   location: "Athens, Greece",
   email: "kdespotidou@di.uoa.gr",
   // Put your CV at public/cv.pdf and set this to "/cv.pdf" to show the "Download CV" buttons.

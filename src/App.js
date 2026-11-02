@@ -77,7 +77,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Sidebar sections={sections} active={active} isDarkMode={isDarkMode} onToggleTheme={toggleTheme} />
-      <main className="px-5 sm:px-8 lg:ml-64 lg:px-16 xl:px-24">
+      <main className="overflow-x-clip px-5 sm:px-8 lg:ml-64 lg:px-16 xl:px-24">
         <div className="mx-auto max-w-4xl">
           <Hero />
           <About />
