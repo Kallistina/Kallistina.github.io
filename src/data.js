@@ -96,6 +96,32 @@ export const experience = [
 export const publications = [
   {
     authors:
+      "T. Mailis, Y. Foufoulas, K. Filippopolitis, K. Despotidou, T. M. Karampatsis, A. Ktenidis, E. Mailli, T. Papamarkou, Y. Ioannidis",
+    title: "FeTA: A Fresh Slice of Federated Tensor Algebra",
+    venue: "International Conference on Extending Database Technology (EDBT)",
+    year: "",
+    status: "Under submission",
+    links: {},
+  },
+  {
+    authors:
+      "Y. Foufoulas, A. Ktenidis, K. Filippopolitis, K. Despotidou, T. Mailis, T. M. Karampatsis, E. Mailli, T. Papamarkou, Y. Ioannidis",
+    title: "Accelerating Federated Learning via Optimized Database UDF Execution",
+    venue: "ACM Conference on Management of Data (SIGMOD)",
+    year: "2027",
+    status: "Under submission",
+    links: {},
+  },
+  {
+    authors: "G. Zamzmi, K. Despotidou, E. Puyol Anton, T. Papamarkou, Y. Ioannidis",
+    title: "Explainable AI as a Clinical Decision-Support Intervention",
+    venue: "BJR | Artificial Intelligence (British Institute of Radiology)",
+    year: "2026",
+    status: "Under submission",
+    links: {},
+  },
+  {
+    authors:
       "T. Mailis, T. Papamarkou, A. Ktenidis, K. Despotidou, K. Filippopolitis, Y. Foufoulas, T. M. Karampatsis, E. Mailli, Y. Ioannidis",
     title: "A Typed Tensor Language for Shared-State Federated Computation",
     venue: "Advances in Neural Information Processing Systems (NeurIPS)",
@@ -104,7 +130,16 @@ export const publications = [
     links: { arxiv: "https://arxiv.org/abs/2605.21103" },
   },
   {
-    authors: "G. Zamzmi, E. P. Anton, K. Despotidou, T. Papamarkou, Y. Ioannidis",
+    authors:
+      "Y. Foufoulas, T. Mailis, K. Filippopolitis, K. Despotidou, T. M. Karampatsis, A. Ktenidis, E. Mailli, T. Papamarkou, Y. Ioannidis",
+    title: "Federated Tensor Algebra: A New Programming Paradigm for Federated Analytics and Learning",
+    venue: "ACM AI Leadership Summit",
+    year: "2026",
+    status: "",
+    links: {},
+  },
+  {
+    authors: "G. Zamzmi, E. Puyol Anton, K. Despotidou, T. Papamarkou, Y. Ioannidis",
     title: "Rethinking Explainability for Clinical Trust: A Task-Specific Communicative Layer",
     venue: "Joint FAIMI, BRIDGE and EPIMI Workshop at MICCAI",
     year: "2026",

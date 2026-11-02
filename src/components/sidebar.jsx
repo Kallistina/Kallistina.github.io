@@ -26,12 +26,12 @@ const NavLinks = ({ sections, active, onNavigate }) => (
             onClick={onNavigate}
             aria-current={isActive ? "true" : undefined}
             className={`group flex items-center gap-3 py-1.5 text-sm transition-colors ${
-              isActive ? "text-ink font-medium" : "text-muted hover:text-ink"
+              isActive ? "text-ink font-medium" : "text-muted hover:text-accent"
             }`}
           >
             <span
               className={`h-px transition-all duration-300 ${
-                isActive ? "w-8 bg-accent" : "w-4 bg-line group-hover:w-6 group-hover:bg-muted"
+                isActive ? "w-8 bg-accent" : "w-4 bg-line group-hover:w-6 group-hover:bg-accent"
               }`}
             />
             {section.label}
@@ -58,7 +58,7 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
       {/* Desktop */}
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col justify-between border-r border-line bg-paper px-8 py-10 lg:flex">
         <div>
-          <a href="#top" className="block font-serif text-xl font-semibold leading-tight text-ink">
+          <a href="#top" className="block font-serif text-xl font-semibold leading-tight text-ink transition-colors hover:text-accent">
             {profile.name}
           </a>
           <p className="mt-1 text-sm text-muted">{profile.role}</p>
@@ -86,7 +86,7 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
 
       {/* Mobile top bar */}
       <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-line bg-paper/90 px-4 backdrop-blur lg:hidden">
-        <a href="#top" className="font-serif text-lg font-semibold text-ink">
+        <a href="#top" className="font-serif text-lg font-semibold text-ink transition-colors hover:text-accent">
           {profile.name}
         </a>
         <div className="flex items-center">
@@ -96,7 +96,7 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
             onClick={() => setOpen(true)}
             aria-label="Open menu"
             aria-expanded={open}
-            className="flex h-9 w-9 items-center justify-center rounded-full text-ink hover:bg-accent-soft"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-accent-soft hover:text-accent"
           >
             <LuMenu size={20} />
           </button>
@@ -124,7 +124,7 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
                 type="button"
                 onClick={close}
                 aria-label="Close menu"
-                className="-mr-2 flex h-9 w-9 items-center justify-center rounded-full text-ink hover:bg-accent-soft"
+                className="-mr-2 flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-accent-soft hover:text-accent"
               >
                 <LuX size={20} />
               </button>

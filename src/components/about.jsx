@@ -17,8 +17,8 @@ const About = () => (
         <h3 className="text-xs font-semibold uppercase tracking-widest text-muted">Research interests</h3>
         <ul className="mt-4 space-y-2">
           {about.interests.map((interest) => (
-            <li key={interest} className="flex gap-3 text-ink">
-              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+            <li key={interest} className="group flex gap-3 text-ink transition-colors hover:text-accent">
+              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent transition-transform group-hover:scale-150" />
               {interest}
             </li>
           ))}

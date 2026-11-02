@@ -9,12 +9,16 @@ const Authors = ({ authors }) => (
   <>
     {authors.split(", ").map((author, i, all) => (
       <React.Fragment key={author}>
-        {author.includes(surname) ? <strong className="font-semibold text-ink">{author}</strong> : author}
+        <span className="whitespace-nowrap">
+          {author.includes(surname) ? <strong className="font-semibold text-ink">{author}</strong> : author}
+        </span>
         {i < all.length - 1 && ", "}
       </React.Fragment>
     ))}
   </>
 );
+
+const mainLink = (pub) => Object.values(pub.links || {}).find(Boolean);
 
 const Publications = () => (
   <Section id="publications" title="Publications">
@@ -22,38 +26,51 @@ const Publications = () => (
       <p className="max-w-2xl text-muted">No publications yet.</p>
     ) : (
       <ol className="space-y-8">
-        {publications.map((pub) => (
-          <li key={pub.title} className="max-w-3xl">
-            <h3 className="font-serif text-lg font-semibold leading-snug text-ink">{pub.title}</h3>
-            <p className="mt-1 text-sm text-muted">
-              <Authors authors={pub.authors} />
-            </p>
-            <p className="mt-1 text-sm text-muted">
-              <em>{pub.venue}</em>
-              {pub.year && `, ${pub.year}`}
-              {pub.status && (
-                <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-medium not-italic text-accent">
-                  {pub.status}
-                </span>
+        {publications.map((pub, i) => (
+          <li key={pub.title} className="group grid grid-cols-[2.25rem_1fr]">
+            <span className="pt-0.5 text-sm tabular-nums text-muted transition-colors group-hover:text-accent">[{i + 1}]</span>
+            <div>
+              <h3 className="font-serif text-lg font-semibold leading-snug text-ink transition-colors group-hover:text-accent">
+                {mainLink(pub) ? (
+                  <a href={mainLink(pub)} target="_blank" rel="noreferrer">
+                    {pub.title}
+                  </a>
+                ) : (
+                  pub.title
+                )}
+              </h3>
+              {pub.authors && (
+                <p className="mt-1 text-sm text-muted">
+                  <Authors authors={pub.authors} />
+                </p>
               )}
-            </p>
-            {pub.links && (
-              <div className="mt-2 flex gap-4 text-sm">
-                {Object.entries(pub.links)
-                  .filter(([, href]) => href)
-                  .map(([label, href]) => (
-                    <a
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-medium uppercase tracking-wide text-accent underline-offset-4 hover:underline"
-                    >
-                      {label}
-                    </a>
-                  ))}
-              </div>
-            )}
+              <p className="mt-1 text-sm text-muted">
+                <em>{pub.venue}</em>
+                {pub.year && `, ${pub.year}`}
+                {pub.status && (
+                  <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-medium not-italic text-accent">
+                    {pub.status}
+                  </span>
+                )}
+              </p>
+              {pub.links && (
+                <div className="mt-2 flex gap-4 text-sm">
+                  {Object.entries(pub.links)
+                    .filter(([, href]) => href)
+                    .map(([label, href]) => (
+                      <a
+                        key={label}
+                        href={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-medium uppercase tracking-wide text-accent underline-offset-4 hover:underline"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                </div>
+              )}
+            </div>
           </li>
         ))}
       </ol>

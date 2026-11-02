@@ -3,8 +3,8 @@ import Section from "./section";
 import { languages, skills } from "../data";
 
 const Row = ({ label, children }) => (
-  <div className="grid gap-3 py-4 md:grid-cols-[11rem_1fr] md:gap-8">
-    <h3 className="text-sm font-semibold text-ink md:pt-1">{label}</h3>
+  <div className="group grid gap-3 py-4 md:grid-cols-[11rem_1fr] md:gap-8">
+    <h3 className="text-sm font-semibold text-ink transition-colors group-hover:text-accent md:pt-1">{label}</h3>
     {children}
   </div>
 );
@@ -16,7 +16,7 @@ const Skills = () => (
         <Row key={group.group} label={group.group}>
           <ul className="flex flex-wrap gap-2">
             {group.items.map((item) => (
-              <li key={item} className="rounded-md border border-line bg-surface px-2.5 py-1 text-sm text-ink/90">
+              <li key={item} className="rounded-md border border-line bg-surface px-2.5 py-1 text-sm text-ink/90 transition-colors hover:border-accent hover:bg-accent-soft hover:text-accent">
                 {item}
               </li>
             ))}

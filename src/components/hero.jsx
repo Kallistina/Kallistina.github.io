@@ -40,7 +40,7 @@ const Hero = () => (
 
     <a
       href="#about"
-      className="absolute bottom-8 left-0 hidden items-center gap-2 text-sm text-muted transition-colors hover:text-ink md:inline-flex"
+      className="absolute bottom-8 left-0 hidden items-center gap-2 text-sm text-muted transition-colors hover:text-accent md:inline-flex"
     >
       <LuArrowDown size={16} className="animate-bounce motion-reduce:animate-none" /> Scroll
     </a>

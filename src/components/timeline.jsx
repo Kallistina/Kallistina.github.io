@@ -4,10 +4,10 @@ import React from "react";
 const Timeline = ({ items }) => (
   <ol className="space-y-10">
     {items.map((item) => (
-      <li key={`${item.title}-${item.period}`} className="grid gap-1 md:grid-cols-[11rem_1fr] md:gap-8">
-        <p className="text-sm tabular-nums text-muted md:pt-1">{item.period}</p>
+      <li key={`${item.title}-${item.period}`} className="group grid gap-1 md:grid-cols-[11rem_1fr] md:gap-8">
+        <p className="text-sm tabular-nums text-muted transition-colors group-hover:text-accent md:pt-1">{item.period}</p>
         <div>
-          <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
+          <h3 className="text-lg font-semibold text-ink transition-colors group-hover:text-accent">{item.title}</h3>
           <p className="text-accent">
             {item.subtitle}
             {item.location && <span className="text-muted"> · {item.location}</span>}

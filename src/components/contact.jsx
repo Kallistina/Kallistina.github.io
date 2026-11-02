@@ -25,7 +25,7 @@ const Contact = () => (
       <span>
         © {new Date().getFullYear()} {profile.name}
       </span>
-      <a href="#top" className="inline-flex items-center gap-1 transition-colors hover:text-ink">
+      <a href="#top" className="inline-flex items-center gap-1 transition-colors hover:text-accent">
         Back to top <LuArrowUp size={14} />
       </a>
     </footer>
