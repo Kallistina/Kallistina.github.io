@@ -10,6 +10,8 @@ const Education = () => (
         title: item.degree,
         subtitle: item.institution,
         period: item.period,
+        logo: item.logo,
+        logoAlt: item.institution,
         location: item.location,
         meta: [item.focus && `Focus: ${item.focus}`, item.thesis, item.grade],
         details: item.details,

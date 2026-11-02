@@ -10,6 +10,8 @@ const Experience = () => (
         title: item.role,
         subtitle: item.org,
         period: item.period,
+        logo: item.logo,
+        logoAlt: item.org,
         location: item.location,
         meta: [],
         details: item.details,

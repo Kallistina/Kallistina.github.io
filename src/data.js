@@ -42,6 +42,7 @@ export const education = [
   {
     degree: "MSc in Computer, Telecommunications and Network Engineering",
     short: "MSc", // label in the timeline
+    logo: "/logos/uoa.svg", // image in public/logos/
     institution: "National and Kapodistrian University of Athens",
     period: "2024 — 2026",
     location: "Athens, Greece",
@@ -54,6 +55,7 @@ export const education = [
   {
     degree: "BSc in Informatics and Telecommunications",
     short: "BSc",
+    logo: "/logos/uoa.svg",
     institution: "National and Kapodistrian University of Athens",
     period: "2020 — 2024",
     location: "Athens, Greece",
@@ -69,6 +71,7 @@ export const experience = [
     role: "Software Engineer & Researcher",
     org: "Athena Research Center",
     short: "Athena RC", // label in the timeline
+    logo: "/logos/athena.svg", // image in public/logos/
     period: "Nov 2025 — Present",
     location: "Athens, Greece",
     // 1–3 short bullets about what you did / built / found.
@@ -78,6 +81,7 @@ export const experience = [
     role: "Network Engineer",
     org: "Huawei Technologies",
     short: "Huawei",
+    logo: "/logos/huawei.svg",
     period: "Apr 2025 — Oct 2025",
     location: "",
     details: [],
@@ -86,6 +90,7 @@ export const experience = [
     role: "Research and Lab Assistant",
     org: "National and Kapodistrian University of Athens",
     short: "Lab Assistant",
+    logo: "/logos/uoa.svg",
     period: "Dec 2023 — Feb 2025",
     location: "Athens, Greece",
     details: [],
