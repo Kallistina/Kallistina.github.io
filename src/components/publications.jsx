@@ -20,6 +20,9 @@ const Authors = ({ authors }) => (
 
 const mainLink = (pub) => Object.values(pub.links || {}).find(Boolean);
 
+// How each key in a publication's `links` is shown on the page.
+const linkLabels = { arxiv: "arXiv", pdf: "PDF", doi: "DOI", code: "Code", thesis: "Thesis" };
+
 const Publications = () => (
   <Section id="publications" title="Publications">
     {publications.length === 0 ? (
@@ -47,29 +50,27 @@ const Publications = () => (
               <p className="mt-1 text-sm text-muted">
                 <em>{pub.venue}</em>
                 {pub.year && `, ${pub.year}`}
+                {Object.entries(pub.links || {})
+                  .filter(([, href]) => href)
+                  .map(([label, href]) => (
+                    <React.Fragment key={label}>
+                      {" · "}
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-medium text-accent underline-offset-4 hover:underline"
+                      >
+                        {linkLabels[label] || label}
+                      </a>
+                    </React.Fragment>
+                  ))}
                 {pub.status && (
                   <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-medium not-italic text-accent">
                     {pub.status}
                   </span>
                 )}
               </p>
-              {pub.links && (
-                <div className="mt-2 flex gap-4 text-sm">
-                  {Object.entries(pub.links)
-                    .filter(([, href]) => href)
-                    .map(([label, href]) => (
-                      <a
-                        key={label}
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium uppercase tracking-wide text-accent underline-offset-4 hover:underline"
-                      >
-                        {label}
-                      </a>
-                    ))}
-                </div>
-              )}
             </div>
           </li>
         ))}
