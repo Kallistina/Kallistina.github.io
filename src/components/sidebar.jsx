@@ -56,8 +56,14 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
   return (
     <>
       {/* Desktop */}
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col justify-between border-r border-line bg-paper px-8 py-10 lg:flex">
-        <div>
+      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col justify-between overflow-hidden border-r border-line bg-paper px-8 py-10 lg:flex">
+        {/* Faded portrait of Ada Lovelace (A. E. Chalon, 1840, public domain) behind the menu. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-cover bg-[position:42%_center] opacity-[0.16] [mask-image:linear-gradient(to_bottom,transparent,black_18%,black_82%,transparent)] dark:opacity-[0.1]"
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/ada-lovelace.jpg)` }}
+        />
+        <div className="relative">
           <a href="#top" className="block font-serif text-xl font-semibold leading-tight text-ink transition-colors hover:text-accent">
             {profile.name}
           </a>
@@ -66,7 +72,7 @@ const Sidebar = ({ sections, active, isDarkMode, onToggleTheme }) => {
             <NavLinks sections={sections} active={active} />
           </nav>
         </div>
-        <div className="space-y-4">
+        <div className="relative space-y-4">
           {profile.cv && (
             <a
               href={profile.cv}
