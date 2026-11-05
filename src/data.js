@@ -27,7 +27,7 @@ export const about = {
   bio: [
     "I recently completed my MSc in Computer, Telecommunications and Network Engineering at the National and Kapodistrian University of Athens, where I also studied Informatics and Telecommunications. I work as a Software Engineer & Researcher at the Athena Research Center.",
     "My research focuses on privacy-preserving machine learning. In my MSc thesis I worked on privacy-preserving federated SHAP explanations of clinical prediction models.",
-    "Before that, I worked as a Network Engineer at Huawei and as a Research and Lab Assistant at the University of Athens.",
+    "Before that, I worked as a Software-Defined Network (SDN) Engineer at Huawei, and I am a Teaching and Research Assistant at the University of Athens.",
   ],
   interests: [
     "Privacy-Preserving Machine Learning",
@@ -78,7 +78,7 @@ export const experience = [
     details: [],
   },
   {
-    role: "Network Engineer",
+    role: "Software-Defined Network (SDN) Engineer",
     org: "Huawei Technologies",
     short: "Huawei",
     logo: "/logos/huawei.svg",
@@ -87,11 +87,11 @@ export const experience = [
     details: [],
   },
   {
-    role: "Research and Lab Assistant",
+    role: "Teaching and Research Assistant",
     org: "National and Kapodistrian University of Athens",
-    short: "Lab Assistant",
+    short: "Teaching Assistant",
     logo: "/logos/uoa.svg",
-    period: "Dec 2023 — Feb 2025",
+    period: "Dec 2023 — Present",
     location: "Athens, Greece",
     details: [],
   },
