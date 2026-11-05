@@ -202,10 +202,10 @@ export const projects = [
 ];
 
 export const skills = [
-  { group: "Programming", items: ["Python", "C", "C++", "Java", "Go", "JavaScript", "SQL", "MATLAB"] },
+  { group: "Programming", items: ["Python", "C", "C++", "Assembly", "SQL", "MATLAB"] },
   { group: "ML & Research", items: ["Machine Learning", "Federated Learning", "Explainable AI (SHAP)", "Privacy", "Data Analysis"] },
   { group: "Security & Systems", items: ["Systems Security", "Distributed Systems", "Linux"] },
-  { group: "Tools", items: ["Docker", "Kubernetes", "Git", "Bash", "MySQL", "React", "Node.js", "Flask"] },
+  { group: "Tools", items: ["Docker", "Kubernetes", "Git", "Bash", "MySQL", "React", "Node.js", "Flower"] },
 ];
 
 // Spoken languages, e.g. { name: "Greek", level: "Native" }
