@@ -99,22 +99,23 @@ export const experience = [
 
 // Newest first. Fields: authors, title, venue, year, status (optional), links { pdf, doi, code }.
 export const publications = [
-  {
-    authors: "K. Despotidou, T. Papamarkou, Y. Ioannidis",
-    title: "Privacy-Preserving Federated SHAP Explanations of Clinical Prediction Models",
-    venue: "Privacy Enhancing Technologies Symposium (PETS)",
-    year: "2027",
-    status: "Under submission",
-    links: { thesis: "https://pergamos.lib.uoa.gr/en/item/uoadl:5452272" },
-  },
-  {
-    authors: "G. Stamatelis, K. Despotidou, I. Koutsopoulos",
-    title: "Communication Efficient Agreement on State and Uncertainty in Multi-Agent Networks",
-    venue: "European Control Conference (ECC)",
-    year: "2027",
-    status: "Under submission",
-    links: {},
-  },
+  // Hidden for now — remove the "// " to show these two papers again.
+  // {
+  //   authors: "K. Despotidou, T. Papamarkou, Y. Ioannidis",
+  //   title: "Privacy-Preserving Federated SHAP Explanations of Clinical Prediction Models",
+  //   venue: "Privacy Enhancing Technologies Symposium (PETS)",
+  //   year: "2027",
+  //   status: "Under submission",
+  //   links: { thesis: "https://pergamos.lib.uoa.gr/en/item/uoadl:5452272" },
+  // },
+  // {
+  //   authors: "G. Stamatelis, K. Despotidou, I. Koutsopoulos",
+  //   title: "Communication Efficient Agreement on State and Uncertainty in Multi-Agent Networks",
+  //   venue: "European Control Conference (ECC)",
+  //   year: "2027",
+  //   status: "Under submission",
+  //   links: {},
+  // },
   {
     authors:
       "T. Mailis, Y. Foufoulas, K. Filippopolitis, K. Despotidou, T. M. Karampatsis, A. Ktenidis, E. Mailli, T. Papamarkou, Y. Ioannidis",
