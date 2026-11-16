@@ -158,7 +158,7 @@ export const publications = [
     venue: "ACM AI Leadership Summit",
     year: "2026",
     status: "",
-    links: {},
+    links: { pdf: "https://dl.acm.org/doi/pdf/10.1145/3806096.3844813" },
   },
   {
     authors: "G. Zamzmi, E. Puyol Anton, K. Despotidou, T. Papamarkou, Y. Ioannidis",
